@@ -1,0 +1,62 @@
+.anecdote-app {
+  display: grid;
+  gap: 48px;
+  margin: auto;
+  max-width: 760px;
+  padding: 48px 24px;
+  text-align: left;
+}
+
+.anecdote-app section {
+  display: grid;
+  justify-items: start;
+  gap: 16px;
+}
+
+.anecdote-app h1,
+.anecdote-app h2 {
+  margin: 0;
+}
+
+.anecdote {
+  color: var(--text-h);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.vote-count {
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.actions button {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 6px;
+  color: var(--text-h);
+  cursor: pointer;
+  font: inherit;
+  padding: 8px 16px;
+}
+
+.actions button:hover {
+  background: var(--accent-border);
+}
+
+.actions button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .anecdote-app {
+    gap: 36px;
+    padding: 32px 20px;
+  }
+}
